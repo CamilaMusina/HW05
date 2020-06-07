@@ -37,4 +37,5 @@ TEST(Transaction, Saving){
     NiceMock<MockAccount> m(184954, 200);
     MockTransaction l;
     EXPECT_CALL(l, SaveToDataBase(n, m, 300)).Times(1);
-    l
+    l.SaveToDataBase(n, m, 300);
+}
